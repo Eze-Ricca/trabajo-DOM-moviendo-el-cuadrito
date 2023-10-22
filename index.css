@@ -32,6 +32,14 @@ body {
 .detalles {
   font-size: 20px;
 }
-a {
+/* a {
   display: block;
+} */
+
+.otros-trabajos {
+}
+.links-otros-trabajos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
