@@ -32,3 +32,6 @@ body {
 .detalles {
   font-size: 20px;
 }
+a {
+  display: block;
+}
