@@ -8,13 +8,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 /* ======================================================================= */
-/* .container-nav-menu {
-  position: sticky;
-  top: 1;
-} */
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-}
+
 .collapsed {
   display: none;
 }
@@ -115,9 +109,7 @@ nav .desktop .secondary.mini {
   flex-direction: column;
   align-items: center;
 }
-.botones {
-  /* border: solid 2px white; */
-}
+
 .botones-botones {
   display: flex;
   justify-content: space-between;
@@ -146,12 +138,7 @@ nav .desktop .secondary.mini {
   width: 420px;
   color: #ccc;
 }
-/* a {
-  display: block;
-} */
 
-.otros-trabajos {
-}
 .links-otros-trabajos {
   margin: 40px 40px;
   display: flex;
