@@ -2,12 +2,114 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
 }
 body {
   background: #2b2b2b;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* ======================================================================= */
+/* .container-nav-menu {
+  position: sticky;
+  top: 1;
+} */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.collapsed {
+  display: none;
+}
+.container-nav-menu {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+nav .mobile {
+  display: none;
+}
+
+nav .mobile .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+
+nav .mobile .header .more button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 50px;
+  width: 60px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 20px 25px;
+}
+nav a:hover {
+  color: black;
+  background-color: #00c3ff;
+}
+
+nav .desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav .desktop .primary,
+nav .desktop .secondary {
+  display: flex;
+}
+
+nav .desktop .secondary.mini {
+  display: none;
+}
+
+@media screen and (max-width: 881px) {
+  .logo img {
+    height: 50px;
+    width: 60px;
+  }
+  nav .secondary.full {
+    display: none;
+  }
+  nav .secondary.mini {
+    display: block !important;
+  }
+  nav .secondary.mini .submenu {
+    background-color: black;
+    position: absolute;
+    display: none;
+  }
+  nav .secondary.mini:hover .submenu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo img {
+    height: 50px;
+    width: 60px;
+  }
+
+  nav .desktop {
+    display: none;
+  }
+  nav .mobile {
+    display: block;
+  }
+}
+
+/* ========================================================================== */
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -24,6 +126,10 @@ body {
 .boton {
   padding: 20px 64px;
   background: blue;
+  cursor: pointer;
+}
+.boton:hover {
+  background-color: #0769e9;
 }
 #myCanvas {
   margin: 50px 100px 20px 100px;
@@ -38,6 +144,7 @@ body {
 .detalles {
   font-size: 20px;
   width: 420px;
+  color: #ccc;
 }
 /* a {
   display: block;
@@ -60,4 +167,23 @@ body {
   background-color: aqua;
   color: black;
   width: 100%;
+}
+/* ============================================= */
+.footer__contenedor {
+  background: rgb(114, 42, 42);
+  width: 100%;
+  height: 200px;
+  color: black;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__contenedor-logo {
+  height: 70px;
+  width: 80px;
+  margin-left: 40px;
+}
+.footer__contenedor > p {
+  margin-right: 40px;
 }
