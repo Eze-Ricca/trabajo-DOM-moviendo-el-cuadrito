@@ -20,15 +20,30 @@ var paddleWidth = 50;
 var paddleX = (canvas.width - paddleWidth) / 2;
 var rightPressed = false;
 var leftPressed = false;
-document.addEventListener("keydown" || leftBoton, keyDownHandler, false);
-document.addEventListener("keyup" || rightBoton, keyUpHandler, false);
-// document.addEventListener("click", keyDownHandler, false);
-// document.addEventListener("click", keyUpHandler, false);
-const leftBoton = document.getElementById("uno");
-const rightBoton = document.getElementById("dos");
-leftBoton.addEventListener("click", keyDownHandler, false);
-rightBoton.addEventListener("click", keyUpHandler, false);
 
+document.addEventListener("keydown", keyDownHandler, false);
+document.addEventListener("keyup", keyUpHandler, false);
+//==============================================================
+let leftButton = document.getElementById("uno");
+let rightButton = document.getElementById("dos");
+
+leftButton.addEventListener("mousedown", function () {
+  leftPressed = true;
+});
+
+rightButton.addEventListener("mousedown", function () {
+  rightPressed = true;
+});
+
+leftButton.addEventListener("mouseup", function () {
+  leftPressed = false;
+});
+
+rightButton.addEventListener("mouseup", function () {
+  rightPressed = false;
+});
+
+//================================================================
 function keyDownHandler(e) {
   if (e.keyCode == 39) {
     rightPressed = true;
