@@ -1,0 +1,119 @@
+:root {
+  --border-color: #558bff;
+}
+
+body {
+  background-color: rgb(30, 30, 52);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.comments-container {
+  width: 800px;
+  margin: 100px auto;
+  color: white;
+}
+
+.comments-container > .comment {
+  margin-bottom: 10px;
+}
+.comments-container .comment {
+  display: flex;
+}
+
+.comments-container .comment .line {
+  position: relative;
+  width: 10px;
+  height: 50%;
+  border-left: solid 1px var(--border-color);
+  border-bottom: solid 1px var(--border-color);
+  border-radius: 0 0 0 8px;
+}
+.comments-container .comment .comment-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.comments-container .comment .comment-wrapper .content {
+  width: 100%;
+  display: flex;
+  border: solid 1px var(--border-color);
+  padding: 10px;
+  border-radius: 3px;
+  background-color: rgb(44, 43, 80);
+}
+.comments-container .comment .comment-wrapper .content img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
+}
+.comments-container .comment .comment-wrapper .content .comment-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.comments-container
+  .comment
+  .comment-wrapper
+  .content
+  .comment-info
+  .header
+  .username {
+  font-weight: bolder;
+}
+.comments-container
+  .comment
+  .comment-wrapper
+  .content
+  .comment-info
+  .header
+  .date {
+  color: #999;
+}
+.comments-container .comment .comment-wrapper .content .comment-info .actions {
+  display: flex;
+  gap: 5px;
+}
+.comments-container
+  .comment
+  .comment-wrapper
+  .content
+  .comment-info
+  .actions
+  button {
+  border: none;
+  background-color: transparent;
+  color: var(--border-color);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 3px;
+}
+.comments-container
+  .comment
+  .comment-wrapper
+  .content
+  .comment-info
+  .actions
+  button:hover {
+  color: white;
+  background-color: var(--border-color);
+}
+
+.comments-container .comment .replies {
+  padding-top: 10px;
+  position: relative;
+  padding-left: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comments-container .comment .replies::before {
+  content: "";
+  position: absolute;
+  background-color: var(--border-color);
+  width: 1px;
+  top: 0;
+  height: calc(100% - 53px);
+}
