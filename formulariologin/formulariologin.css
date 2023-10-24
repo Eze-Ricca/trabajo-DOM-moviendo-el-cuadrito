@@ -24,7 +24,7 @@ body {
 }
 .form-container .login-container > h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .form-container .login-container > p,
@@ -43,7 +43,7 @@ body {
   display: block;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 5px;
   border: solid 1px #ccc;
   border-radius: 5px;
 }
@@ -68,14 +68,14 @@ body {
 .form-container .login-container .providers {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .btn {
   border: none;
   cursor: pointer;
-  padding: 15px 0;
+  padding: 8px 0;
   width: 100%;
   font-weight: bolder;
   display: block;
@@ -137,7 +137,7 @@ body {
 
 @media screen and (max-width: 900px) {
   .form-container {
-    height: 80%;
+    height: 90%;
   }
   .form-container .login-container {
     width: 350px;
