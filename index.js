@@ -58,7 +58,16 @@ function keyUpHandler(e) {
     leftPressed = false;
   }
 }
+//===========================================================================
+// document.addEventListener("mousemove", mouseMoveHandler, false);
 
+// function mouseMoveHandler(e) {
+//   let relativeX = e.clientX - canvas.offsetLeft;
+//   if (relativeX > 0 && relativeX < canvas.width) {
+//     paddleX = relativeX - paddleWidth / 2;
+//   }
+// }
+//=========================================================================
 function drawPaddle() {
   ctx.beginPath();
   ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);

@@ -1,0 +1,47 @@
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.search-bar {
+  border: solid 1px #ccc;
+  border-radius: 30px;
+
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 10px;
+  margin: 100px auto;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.search-bar:focus-within {
+  border: solid 1px #aaa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.search-bar input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 14px;
+  flex: 1;
+  font-size: 20px;
+}
+.search-bar .actions {
+  display: flex;
+  gap: 5px;
+}
+.search-bar .actions button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  color: #999;
+
+  transition: color 0.3s ease-in-out;
+}
+.search-bar .actions button:hover {
+  color: #2979e2;
+}

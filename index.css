@@ -138,13 +138,29 @@ nav .desktop .secondary.mini {
   width: 420px;
   color: #ccc;
 }
+/* =============================================================== */
+.cont-otrostrabajos {
+  background-color: rgba(0, 0, 0, 0.137);
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 .links-otros-trabajos {
+  width: 80%;
   margin: 40px 40px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+.otros-trabajos {
+  display: flex;
+  /* flex-direction: row; */
+}
+
 .links-otros-trabajos > a {
   font-size: 18px;
   text-decoration: none;
@@ -155,6 +171,45 @@ nav .desktop .secondary.mini {
   color: black;
   width: 100%;
 }
+/* ================================ */
+.links-otros-trabajos2 {
+  width: 80%;
+  margin: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: end;
+  /* border: solid 10px white; */
+  text-align: end;
+}
+.otros-trabajos2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.links-otros-trabajos2 > a {
+  font-size: 18px;
+  text-decoration: none;
+  color: chartreuse;
+}
+.links-otros-trabajos2 > a:hover {
+  background-color: aqua;
+  color: black;
+  width: 100%;
+}
+@media screen and (max-width: 881px) {
+  .otros-trabajos {
+    flex-direction: column;
+  }
+  .links-otros-trabajos2 {
+    align-items: flex-start;
+    text-align: start;
+    margin-top: -25px;
+  }
+}
+@media screen and (max-width: 500px) {
+}
+
 /* ============================================= */
 .footer__contenedor {
   background: rgb(114, 42, 42);
